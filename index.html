@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffWind</title>
+    <!-- awesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="logo">Off<span>Wind</span></a>
+
+            <button id="navbar-show-btn" type="button" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div id="navbar-collapse">
+                <button id="navbar-close-btn" type="button" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+
+                    <!-- dark/light mode -->
+                    <li class="nav-item"><i class="far fa-moon cng-mode nav-link" id="mode-btn"></i></li>
+
+                    <!-- login form -->
+                    <li class="nav-item"><i class="far fa-user login nav-link" id="login-btn"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- login form start -->
+
+    <div class="login-form-container">
+        <div class="fas fa-times" id="close-login-btn"></div>
+
+        <form action="">
+            <h2>Sign in</h2>
+            <span>Username</span>
+            <input type="email" placeholder="enter email" class="box">
+            <span>Password</span>
+            <input type="password" placeholder="enter password" class="box">
+
+            <div class="checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me"> Remember me </label>
+            </div>
+
+            <input type="submit" value="sign in" class="btn">
+            <p>
+                Forget password? <a href="#">Click here</a>
+            </p>
+            <p>
+                Don't have an account? <a href="#">Register here</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- login form end -->
+
+    <!-- header start -->
+
+    <header class="flex" id="header">
+        <div class="container">
+            <div class="header-title">
+                <h1>Where the journey begins!</h1>
+                <p>
+                    Explore the perspective of the world you have never seen before and
+                    reconnect with life & purposes
+                </p>
+            </div>
+
+            <div class="header-form">
+                <h2>Choose your Travel locations:</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Destination name" required>
+                    <label class="text">From: </label>
+                    <input type="date" class="form-control" id="date-picker" required>
+                    <label class="text">To: </label>
+                    <input type="date" class="form-control" id="date-picker2" required>
+                    <input type="number" class="form-control" placeholder="# of travelers" min="1" required>
+                    <input type="submit" class="btn" value="Book Now">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- destination start -->
+
+    <section class="py-4" id="destination">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">know about some places before your travel</span>
+                <h2 class="lg-title">featured destinations</h2>
+
+                <div>
+                    <a href="gallery.html" class="btn">View all destinations</a>
+                </div>
+            </div>
+
+            <div class="card-row">
+                <div class="card-item my-2 shadow">
+                    <img src="images/sr/sr-3.jpg" alt="">
+
+                    <div class="card-item-content">
+                        <span><i class="fas fa-map-marker-alt"></i> Siem Reap</span>
+
+                        <div>
+                            <p class="text">
+                                Siem Reap province is located in northwest Cambodia.
+                                It is the major tourist hub in Cambodia, as it is the closest city
+                                to the world famous temples of Angkor (the Angkor temple complex is
+                                north of the city). The provincial capital is also called Siem Reap
+                                and is located in the South of the province on the shores of the
+                                Tonle Sap Lake, the greatest sweet water reserve in whole Southeast
+                                Asia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/kk/kk-2.jpg" alt="">
+
+                    <div class="card-item-content">
+                        <span><i class="fas fa-map-marker-alt"></i> Koh Kong</span>
+
+                        <div>
+                            <p class="text">
+                                Koh Kong is the most southwestern province of Cambodia.
+                                It is one of the biggest provinces in the whole country with a
+                                long undeveloped coastline and a mountainous, forested and
+                                largely inaccessible interior, which embraces part of the
+                                Cardamom Mountains. Its tourist attractions include abundant wildlife;
+                                big waterfalls and casinos on the border to Thailand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/kp/kp-1.jpg" alt="">
+
+                    <div class="card-item-content">
+                        <span><i class="fas fa-map-marker-alt"></i> Kampot</span>
+
+                        <div>
+                            <p class="text">
+                                Kampot is located in the Southwest of the country,
+                                having an eighty kilometers coastal strip with the Gulf of
+                                Thailand. The provincial capital is named Kampot
+                                and sits near the base of the abundant green Elephant Mountains
+                                and the famous Bokor Hill Station. Compete to crowded
+                                Sihanoukville in the North of the province you may find quietness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/pp/pp-2.jpg" alt="">
+
+                    <div class="card-item-content">
+                        <span><i class="fas fa-map-marker-alt"></i> Phnom Penh</span>
+
+                        <div>
+                            <p class="text">
+                                Phnom Penh is the vibrant bustling capital of Cambodia.
+                                Situated at the confluence of three rivers, the mighty Mekong, the
+                                Bassac and the great Tonle Sap, what was once considered the 'Gem'
+                                of Indochina. The capital city still maintains considerable charm
+                                with plenty to see.Phnom Penh is a veritable oasis compared to the modernity of other
+                                Asian capitals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/md/md-4.jpg" alt="">
+
+                    <div class="card-item-content">
+                        <span><i class="fas fa-map-marker-alt"></i> Mondulkiri</span>
+
+                        <div>
+                            <p class="text">
+                                Mondulkiri is an eastern province of Cambodia, which is the most sparsely
+                                populated province in the whole country although being the largest
+                                province in Cambodia. The province is chock full of natural beauty,
+                                with thickly forested mountains, powerful waterfalls and the lush green
+                                rolling hills of the western side. You may also
+                                find gigantic and beautiful waterfalls, where you can take an
+                                empowering shower, such as the impressive Bou Sraa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/bb/bb-6.jpg" alt="">
+
+                    <div class="card-item-content">
+                        <span><i class="fas fa-map-marker-alt"></i> Battambong</span>
+
+                        <div>
+                            <p class="text">
+                                Battambang is Cambodia's second-largest city and the capital of Battambang
+                                Province, which was founded in the 11th century. It is the former
+                                capital of Monton Kmer and lies in the heart of the Northwest of
+                                Cambodia. Until the war years, in which almost every infrastructure
+                                was destructed it was the leading rice-producing province of the
+                                country.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- destination end -->
+
+    <!-- packages start -->
+
+    <section class="py-4" id="package">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Designed especially for you</span>
+                <h2 class="lg-title">Our packages</h2>
+
+                <div>
+                    <a href="packages.html" class="btn">View all packages</a>
+                </div>
+            </div>
+
+            <div class="card-row">
+                <div class="card-item my-2 shadow">
+                    <img src="images/package/p-1.jpg" alt="">
+
+                    <div class="package-item-content">
+                        <span><i class="fas fa-box"></i> Explore Cambodia</span>
+
+                        <div>
+                            <p class="text">
+                                Stay 6 nights/7 days US $750 per person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/package/p-2.jpg" alt="">
+
+                    <div class="package-item-content">
+                        <span><i class="fas fa-box"></i> Sealife</span>
+
+                        <div>
+                            <p class="text">
+                                Stay 4 nights/5 days US $650 per person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item my-2 shadow">
+                    <img src="images/package/p-3.jpg" alt="">
+
+                    <div class="package-item-content">
+                        <span><i class="fas fa-box"></i> Family time in Cambodia</span>
+
+                        <div>
+                            <p class="text">
+                                Stay 2 nights/3 days US $400 per person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- packages end -->
+
+    <!-- services start -->
+
+    <section class="py-4" id="services">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">other services that we offer</span>
+                <h2 class="lg-title">our services</h2>
+
+                <div>
+                    <a href="#" class="btn">View all services</a>
+                </div>
+            </div>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Affordable Hotels</h3>
+                    <p>
+                        Treat Yourself with our Affordable Hotels.
+                        Great deals, Great Locations!
+                    </p>
+                </div>
+
+                <div class="services-box">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Food & Drinks</h3>
+                    <p>
+                        Experience the remarkable khmer cuisine options! Truly exceptional with wide range of choices
+                        for everyone!
+                    </p>
+                </div>
+
+                <div class="services-box">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Travel Guide</h3>
+                    <p>
+                        Explore fun things to do with our Travel Guide.
+                        You'll never roam alone.
+                    </p>
+                </div>
+
+                <div class="services-box">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Adventures</h3>
+                    <p>
+                        Join us for an unexpected Adventures and get-away.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services end -->
+
+    <!-- newsletter start -->
+
+    <section class="py-4" id="newsletter">
+        <div class="newsletter-container container">
+            <div class="newsletter-content">
+                <div class="title-wrap">
+                    <h2 class="lg-title">Newsletter</h2>
+                    <span class="sm-title">Subscribe now to get the latest OffWind news!</span>
+                </div>
+
+                <form class="flex newsletter-box">
+                    <input type="email" class="form-control" placeholder="Enter email" required>
+                    <button type="button" class="btn" id="open-popup-btn">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- popup -->
+            <div class="popup" id="popup">
+                <i class="fas fa-check"></i>
+                <h2>Thank You!</h2>
+                <p>
+                    Your subscribe means a lot to us.
+                </p>
+                <button type="button" class="btn" id="close-popup-btn">OK</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter end -->
+
+    <div class="line"></div>
+
+    <!-- footer start -->
+
+    <footer class="py-1-5">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="logo">Off<span>Wind</span></a>
+                <p class="text">
+                    OffWind is a professional who plans your next vacation.
+                    Call, email, send messages - whatever works for you.
+                    We will be here!
+                </p>
+                <h3 class="text">Contact Us: </h3>
+                <ul>
+                    <li><a href="mailto:offwind@gmail.com"><i class="fas fa-envelope"></i> offwind@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> +855-xxx-xxx</li>
+                    <li><i class="fas fa-location-dot"></i> no.12, st.02, Phnom Penh, Cambodia</li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Other informations: </h2>
+                <ul>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#">Flight Details</a></li>
+                    <li><a href="#">Car Rental</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Quick Links: </h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright-item">
+            Copyright &copy, 2022 by OffWind. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- scroll up start -->
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!-- scroll up end -->
+
+    <!-- js script -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
